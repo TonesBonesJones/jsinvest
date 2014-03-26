@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>In-House Portfolio</title>
+</head>
+<body>
+<header>	
+	<nav id ="header" class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="page-header">
+ 			 <h1>JSinvest <small>LLC</small></h1>
+		</div>
+	</nav>
+</header>
+<div id="stocks" class="center-block">
+<!-- <h4>Notable Gainers</h4> -->
+	<h4>In-House Portflio #1 ($20,000 account)</h4>	
+	<iframe allowtransparency="true" marginwidth="0" marginheight="0" hspace="0" vspace="0" frameborder="0" scrolling="no" src="http://badge.finance.yahoo.com/instrument/1.0/MVIS,NUS,MILL,ICLD,CREG,USNA,BONT,WLBPZ,HLF,RLOC/badge;chart=6m;quote/HTML/f.white?AppID=xWezvbxcWXY6PO4_WW0e9b92UGx_aU5XOLRLhK3YsQ--&sig=6n8ZFY2web7s4KKl6Pjb6rdaOXM-&t=1395686614162" width="300px" height="756px"><a href="http://finance.yahoo.com">Yahoo! Finance</a><br/><a href="http://finance.yahoo.com/q?s=MVIS">Quote for MVIS</a></iframe>
+</div>		
+</body>
+<footer id="portfolio-footer">
+	<%= image_tag "divider.png" %>
+	<%= image_tag "verisign.png", id: "veri_data" %>	
+	<div class="yahoo" id="links">	
+	 	<%= link_to "Home", "/jsinvests/index", class: "links" %>
+		<%= link_to "Market History", "/jsinvests/data", class: "links" %>
+		<%= link_to "Articles", "/jsinvests/article", class: "links" %>
+		<%= link_to "In-House Portfolio", "/jsinvests/portfolio", class: "links" %>
+		<%= link_to "Contact Us", "/jsinvests/contact", class: "links" %>
+	</div>
+	<div class="yahoo" id="disclaimer">
+		<h6><i>Our recommendations rely on histrorical data. There are no guarantees of future returns.</i></h6>
+		<h6><span>Terms of Service<span> &#174 2014 JSinvest. All rights reserved. </h6> 
+	</div>	
+</footer>
+</html>

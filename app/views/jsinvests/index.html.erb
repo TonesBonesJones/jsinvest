@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Frontpage</title>
+</head>
+<body>
+<header>	
+	<nav id ="header" class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="page-header">
+ 			 <h1>JSinvest <small>LLC</small></h1>
+		</div>
+	</nav>
+</header>
+<div id="global-container">
+	<div id="jumbo" class="jumbotron">
+		<h1>The Inside Scoop on the Market!</h1>
+		<p><a class="btn btn-primary btn-lg" role="button">Try It Now!</a></p>
+	</div>
+		<h3 id="how"> Here's How it Works <h3>
+		<%= image_tag "divider.png" %>	
+	<div id="main">	
+		<p><%= image_tag "main.png" %></p>
+	</div>	
+	<div id="philosophy">
+		<h3 class="keypoint">Buy-Low Sell-High!</h3>
+		<h4>Our database keeps a history of market trends. Find the data to aid you in your investment decisions.</h4>
+		<%= image_tag "chart.png" %>
+	</div>
+	<div id="sense">
+		<%= image_tag "divider.png" %>
+		<h3 class="keypoint">Making Sense of Data!</h3>
+		<h4>What good is data if we don't understand the underlying causes?</h4>
+		<h4>Our weekly articles summarize why the market is behaving the way it is.</h4> 
+		<%= image_tag "laptop.png" %>
+	</div>
+	<div id="dollaz">
+		<%= image_tag "divider.png" %>
+		<h3 class="keypoint">Money Where Your Mouth Is!</h3>
+		<h4>Access our in-house portfolios.</h4>
+		<h4>See how much we are vested ourselves before you make your decision.</h4>
+		<%= image_tag "sectors1.png" %>
+	</div>	
+	
+</body>
+<footer>
+	<%= image_tag "divider.png" %>
+	<%= image_tag "verisign.png", id: "veri" %>	
+	<div id="links">
+		<%= link_to "Home", "/jsinvests/index", class: "links" %>	 
+		<%= link_to "Market History", "/jsinvests/data", class: "links" %>
+		<%= link_to "Articles", "/jsinvests/article", class: "links" %>
+		<%= link_to "In-House Portfolio", "/jsinvests/portfolio", class: "links" %>
+		<%= link_to "Contact Us", "/jsinvests/contact", class: "links" %>
+	</div>
+	<div id="disclaimer">
+		<h6><i>Our recommendations rely on histrorical data. There are no guarantees of future returns.</i></h6>
+		<h6><span>Terms of Service<span> &#174 2014 JSinvest. All rights reserved. </h6> 
+	</div>	
+</footer>
+</div>	
+</html>
